@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restorent Booking Page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="error-container">
+      <div id="err">
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="booking-1">
+        <h1>Book Your Table</h1>
+        <form action="" method="post" id="booking-form" onsubmit="return booking(this)">
+          <input type="text" placeholder="Enter Your Username" name="username" />
+          <div class="one_input">
+            <input
+              type="number"
+              name="number"
+              placeholder="Your Mobile Number"
+            />
+            <input type="email" name="email" placeholder="Enter Your Email" />
+          </div>
+          <select name="choicebooking" id="choicebooking" >
+            <option value="Full day booking" selected>Full day booking</option>
+            <option value="Half day booking">Half day booking</option>
+            <option value="Hourly booking">Hourly booking</option>
+          </select>
+          <div class="person">
+            <label  name="person">Number Of Persons :</label>
+            <input type="number" name="person" id="number-person" />
+          </div>
+          <div class="date-1">
+            <label for="dateselector" name="dateselector">Choose Date :</label>
+            <input type="date" name="dateselector" id="date-selector" />
+          </div>
+          <button class="book-btn" type="submit">Book Now</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
